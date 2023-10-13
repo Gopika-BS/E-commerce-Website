@@ -1,645 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>E-commerce</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- font family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet" />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <!-- css file -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <!-- place navbar here -->
-      <section class="section">
-        <div class="container-lg">
-          <div class="d-flex">
-            <p class="me-auto">
-              <img
-                src="./assets/img/icon/truck-nav.svg"
-                class="img-fluid"
-                alt="icon truck" />
-              FREE Express Shipping On Orders $570+
-            </p>
-            <!-- Dropdown -->
-            <div>
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  English
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <button class="dropdown-item" type="button">Spanish</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">Russian</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Portuguese
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  USD
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <button class="dropdown-item" type="button">EUR</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">CHF</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">GBP</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">KWD</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-secondary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Settings
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      My Profile
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Wishlist
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">Cart</button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">Logout</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Shofy - Multipurpose eCommerce Angular Template</title>
+  <link rel="shortcut icon" href="assets/img/shofy/shofy-favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,  shrink-to-fit=no" />
+  <!-- ========== Start Link ========== -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oregano&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- ========== End Link ========== -->
+</head>
+
+<body>
+  <!-- ========== Start Navbar ========== -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+    <div class="container-lg">
+      <a href="index.html">
+        <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
+      </a>
+      <div class="offcanvas offcanvas-end flex-grow-0 me-auto" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a href="index.html">
+            <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </section>
-      <section class="section">
-        <div class="container-lg">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid vstack">
-              <div class="hstack">
-                <img
-                  src="./assets//img/shofy/shofy-logo.svg"
-                  class="img-fluid"
-                  alt="shofy" />
-                <div class="hstack">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name=""
-                    id=""
-                    aria-describedby="helpId"
-                    placeholder="Search for Products..." />
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Select Category
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#"> Select Category </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"> Electronics </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"> Fashion </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"> Beauty </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"> Jewelry </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <button type="button" class="btn btn-primary">Primary</button>
-                </div>
-                <div class="personal">
-                  <i class="bi bi-person-circle"></i>
-                  <div>
-                    <span>Hello, Sign In</span>
-                    <p>Your Account</p>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 ps-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="product-list.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-search ms-3 me-auto d-none d-md-block">
+        <input type="text" class="form-control" name="" id="" placeholder="Search for Products..." />
+      </div>
+      <div class="hstack ">
+        <div class="position-relative me-3">
+          <i class="bi bi-cart3 fs-3"></i>
+          <span class="position-absolute top-8 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </div>
+
+        <div class="dropdown">
+          <button type="button" class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="online">
+              <img src="/assets/img/user/user1.jpg" class="user-img online" alt="" srcset="" />
+            </div>
+          </button>
+          <ul class="dropdown-menu dropdown-profile dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li class="px-3">
+              <button class="dropdown-item" type="button">
+                <div class="hstack gap-3">
+                  <img src="/assets/img/user/user1.jpg" class="img-fluid rounded-4 sq-50" alt="" srcset="" />
+                  <div class="vstack justify-content-center">
+                    <p class="fw-600 text-dark">Jane cooper</p>
+                    <small class="text-muted">janeester@two.com</small>
                   </div>
                 </div>
-                <div>
-                  <i class="bi bi-arrow-down-up"></i>
-                  <i class="bi bi-heart-fill"></i>
-                  <i class="bi bi-bag-check-fill"></i>
-                </div>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  aria-controls="offcanvasNavbar"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div
-                class="offcanvas offcanvas-end"
-                tabindex="-1"
-                id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    Offcanvas
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        All Categories
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Home
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Shop
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Products
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="#"
-                            >Coupons</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
+              </button>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="px-3">
+              <button class="dropdown-item" type="button">Settings</button>
+            </li>
+            <li class="px-3">
+              <button class="dropdown-item" type="button">Sign out</button>
+            </li>
+          </ul>
         </div>
-      </section>
-    </header>
-    <main>
-      <section class="section">
-        <div class="container-lg">
-          <div class="row">
-            <div class="col-12">
-              <a href="#"><span>electronics</span></a>
-              <h3>Here's the first Valentino's new Makeup Collection</h3>
-              <div>
-                <span>
-                  <img
-                    src="./assets/img/icon/person.svg"
-                    class="img-fluid"
-                    alt="person icon" />
-                  BY Mark Smith
-                </span>
-                <span>
-                  <img
-                    src="./assets/img/icon/clock.svg"
-                    class="img-fluid"
-                    alt="clock icon" />
-                  14 January, 2023
-                </span>
-                <span>
-                  <img
-                    src="./assets/img/icon/comments.svg"
-                    class="img-fluid"
-                    alt="comments icon" />
-                  Comments (2)
-                </span>
-              </div>
-              <img
-                src="./assets/img/blog/blog-big-1.jpg"
-                class="img-fluid"
-                alt="person" />
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- ========== End Navbar ========== -->
+  <main>
+    <section class="section">
+      <div class="container-lg">
+        <div class="row row-32">
+          <div class="col-12">
+
+            <a href="#" class="link-primary d-block fs-20 mb-3">Electronics</a>
+            <h3 class="blog-title-1">Here's the first Valentino's new Makeup Collection</h3>
+            <div class="d-flex flex-wrap fs-14 text-grey-800 mb-32 gap-8">
+              <span class="text-nowrap">
+                <i class="bi bi-person me-1"></i>
+                BY Mark Smith
+              </span>
+              <span class="vr"></span>
+              <span class="text-nowrap">
+                <i class="bi bi-clock me-1"></i>
+                14 January, 2023
+              </span>
+              <span class="vr"></span>
+              <span class="text-nowrap">
+                <i class="bi bi-chat me-1"></i>
+                Comments (2)
+              </span>
             </div>
-            <div class="col-lg-9">
-              <p>
-                sales process is critically important to the success of your
-                reps and your business. If you've never seen a really skilled
-                salesperson work, it seems almost effortless. They ask great
-                questions, craftt perfect proposal, answer questions, address
-                concerns and seamlessly seal the Underneath the surface of all
-                of that, the salesperson has probably dedicated hours honing
-                their craft and ensuring the process moves smoothly.
-              </p>
-              <p>
-                One of the challenges that often surfaces when working with a
-                remote sales team is a lack of transparency over what is
-                happening, and where in the process things are taking place.
-                We’re going to peel back the curtain and show you how to create
-                the best sales.
-              </p>
-              <h4>Breaking Up With Fast Fashion Has Been Easier</h4>
-              <p>
-                Lommodo ligula eget dolor. Aenean massa. Cum sociis que
-                penatibus magnis dis parturient montes lorem, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque euro,
-                pretium, sem. Nulla onsequat massa quis enim. donec pede justo
-                fringilla vel aliquet.
-              </p>
-
-              <img
-                src="./assets/img/blog/blog-details-sm-1.jpg"
-                class="img-fluid"
-                alt="person img" />
-              <p>
-                <span
-                  >Gucci’s Women’s Cruise Collection 2023 Lookbook Has
-                  Arrived</span
-                >
-              </p>
-
-              <p>
-                “We’re so glad we’ll be working with you to get your new
-                marketing strategy up and running. I've attached the details of
-                your package. Next you’ll get an email from Jen to schedule your
-                kick-off meeting and be assigned your account rep. During your
-                kick-off meeting, we will introduce your project team, let you
-                know what access we need to start.”
-              </p>
-              <div>
-                <p>
-                  There is a way out of every box, a solution to every puzzle
-                  its just a matter of finding it.
+            <img src="./assets/img/blog/blog-big-1.jpg" class="img-fluid w-100 mb-32" alt="person" />
+          </div>
+          <div class="col-lg-9 mx-auto">
+            <div class="row row-16">
+              <div class="col-12 vstack">
+                <p class="first-letter-lg blog-content">
+                  sales process is critically important to the success of your
+                  reps and your business. If you've never seen a really skilled
+                  salesperson work, it seems almost effortless. They ask great
+                  questions, craftt perfect proposal, answer questions, address
+                  concerns and seamlessly seal the Underneath the surface of all
+                  of that, the salesperson has probably dedicated hours honing
+                  their craft and ensuring the process moves smoothly.
                 </p>
-                <span>Shahnewaz Sakil</span>
-              </div>
-              <h4>Exploring the English Countryside</h4>
-              <p>
-                Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus
-                et magnis dis parturient montes lorem,nascetur ridiculus mus.
-                Donec quam felis, ultricies nec, pellentesque euro, pretium
-                quis, sem. Nulla onsequat massa quis enim.
-              </p>
-              <div>
-                <ul>
+                <p class=" blog-content">
+                  One of the challenges that often surfaces when working with a
+                  remote sales team is a lack of transparency over what is
+                  happening, and where in the process things are taking place.
+                  We’re going to peel back the curtain and show you how to create
+                  the best sales.
+                </p>
+                <h4 class="blog-title-2">Breaking Up With Fast Fashion Has Been Easier</h4>
+                <p class=" blog-content">
+                  Lommodo ligula eget dolor. Aenean massa. Cum sociis que
+                  penatibus magnis dis parturient montes lorem, nascetur ridiculus
+                  mus. Donec quam felis, ultricies nec, pellentesque euro,
+                  pretium, sem. Nulla onsequat massa quis enim. donec pede justo
+                  fringilla vel aliquet.
+                </p>
+
+                <img src="./assets/img/blog/blog-details-sm-1.jpg" class="img-fluid mx-auto" alt="person img" />
+                <span class="text-muted fs-14 text-center mb-32">Gucci’s Women’s Cruise Collection 2023 Lookbook Has
+                  Arrived</span>
+
+
+                <p class=" blog-content">
+                  “We’re so glad we’ll be working with you to get your new
+                  marketing strategy up and running. I've attached the details of
+                  your package. Next you’ll get an email from Jen to schedule your
+                  kick-off meeting and be assigned your account rep. During your
+                  kick-off meeting, we will introduce your project team, let you
+                  know what access we need to start.”
+                </p>
+                <div class="card-quotes">
+                  <blockquote>
+                    <div class="quote-img">
+                      <img src="/assets/img/bg/blog-bg-1.png" alt="">
+                      <img src="/assets/img/bg/blog-bg-2.png" alt="">
+                    </div>
+                    <p>There is a way out of every box, a solution to every puzzle
+                      its just a matter of finding it.</p>
+                    <cite>Shahnewaz Sakil</cite>
+                  </blockquote>
+                </div>
+                <h4 class="blog-title-2">Exploring the English Countryside</h4>
+                <p class=" blog-content">
+                  Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus
+                  et magnis dis parturient montes lorem,nascetur ridiculus mus.
+                  Donec quam felis, ultricies nec, pellentesque euro, pretium
+                  quis, sem. Nulla onsequat massa quis enim.
+                </p>
+
+                <ul class="ps-16 mb-0  fs-18 li-8 mb-24">
                   <li>Lorem ipsum dolor sit amet.</li>
                   <li>At vero eos et accusamus et iusto odio.</li>
                   <li>Excepteur sint occaecat cupidatat non proident.</li>
                 </ul>
-              </div>
-              <p>
-                Rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                felis eu pede mollis pretium. Integer cidunt. Cras dapibus.
-                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                Aenean leo ligula, porttitor eu, consequat vitae lorem.
-              </p>
-              <div class="row">
-                <div class="col-8 me-auto">
-                  <div>
-                    <span> Tags: </span>
-                    <a href="#">Lifesttyle</a>
-                    <a href="#">Awesome</a>
-                    <a href="#">Winter</a>
-                    <a href="#">Sunglasses</a>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div>
-                    <span>Share:</span>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-twitter"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-vimeo"></i></a>
-                  </div>
-                </div>
-                <div class="col-12"><hr /></div>
-                <div class="col-6">
-                  <span>Previous Post</span>
-                  <div>
-                    <a href="#">
-                      <i class="bi bi-arrow-left"></i>
-                      <h3>Hiring the Right Sales Team at</h3>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <span>Next Post</span>
-                  <div>
-                    <a href="#">
-                      <h3>
-                        Fully embrace the return of <br />
-                        90s fashion
-                      </h3>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/blog-user-1.jpg"
-                          class="img-fluid rounded-start"
-                          alt="person" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <p class="card-text">Written by.</p>
-                          <h5 class="card-title">Theodore Handle</h5>
-                          <p class="card-text">
-                            <small class="text-body-secondary"
-                              >By defining and following internal and external
-                              processes, your team will have clarity on
-                              resources to attract and retain customers for your
-                              business.</small
-                            >
-                          </p>
-                          <div>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-vimeo"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <h3>Comments (2)</h3>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/user-2.jpg"
-                          class="img-fluid rounded-start"
-                          alt="person" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h4 class="card-title">Lance Bogrol</h4>
-                          <p class="card-text">12 April, 2023 at 3.50pm</p>
-                          <p class="card-text">
-                            <small class="text-body-secondary"
-                              >By defining and following internal and external
-                              processes, your team will have clarity on
-                              resources to attract and retain customers for your
-                              business.
-                            </small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/user-3.jpg"
-                          class="img-fluid rounded-start"
-                          alt="person" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h4 class="card-title">Dasy Lily</h4>
-                          <p class="card-text">12 April, 2023 at 3.50pm</p>
-                          <p class="card-text">
-                            <small class="text-body-secondary"
-                              >By defining and following internal and external
-                              processes, your team will have clarity on
-                              resources to attract and retain customers for your
-                              business.
-                            </small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/user-4.jpg"
-                          class="img-fluid rounded-start"
-                          alt="person" />
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h4 class="card-title">Shahnewaz Sakil</h4>
-                          <p class="card-text">12 April, 2023 at 3.50pm</p>
-                          <p class="card-text">
-                            <small class="text-body-secondary"
-                              >By defining and following internal and external
-                              processes, your team will have clarity on
-                              resources to attract and retain customers for your
-                              business.
-                            </small>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <hr />
-                  <h3>Leave a Reply</h3>
-                  <p>
-                    Your email address will not be published. Required fields
-                    are marked *
-                  </p>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Your Name
-                    </label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Lance Bogrol" />
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Email address</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="name@example.com" />
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"
-                      >Example textarea</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"></textarea>
-                  </div>
 
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckDefault" />
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Save my name, email, and website in this browser for the
-                      next time I comment.
-                    </label>
-                  </div>
-                  <button type="button" class="btn btn-primary">Primary</button>
+                <p class=" blog-content">
+                  Rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+                  felis eu pede mollis pretium. Integer cidunt. Cras dapibus.
+                  Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                  Aenean leo ligula, porttitor eu, consequat vitae lorem.
+                </p>
+              </div>
+              <!-- <div class="col-12 d-flex">
+                <div>
+                  <span> Tags: </span>
+                  <a href="#">Lifesttyle</a>
+                  <a href="#">Awesome</a>
+                  <a href="#">Winter</a>
+                  <a href="#">Sunglasses</a>
+                </div>
+                <div>
+                  <span>Share:</span>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-vimeo"></i></a>
                 </div>
               </div>
+              <div class="col-12">
+                <hr />
+              </div>
+              <div class="col-6">
+                <span>Previous Post</span>
+                <div>
+                  <a href="#">
+                    <i class="bi bi-arrow-left"></i>
+                    <h3>Hiring the Right Sales Team at</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <span>Next Post</span>
+                <div>
+                  <a href="#">
+                    <h3>
+                      Fully embrace the return of <br />
+                      90s fashion
+                    </h3>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./assets/img/blog/blog-user-1.jpg" class="img-fluid rounded-start" alt="person" />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="card-text">Written by.</p>
+                        <h5 class="card-title">Theodore Handle</h5>
+                        <p class="card-text">
+                          <small class="text-body-secondary">By defining and following internal and external
+                            processes, your team will have clarity on
+                            resources to attract and retain customers for your
+                            business.</small>
+                        </p>
+                        <div>
+                          <a href="#"><i class="bi bi-facebook"></i></a>
+                          <a href="#"><i class="bi bi-twitter"></i></a>
+                          <a href="#"><i class="bi bi-linkedin"></i></a>
+                          <a href="#"><i class="bi bi-vimeo"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <h3>Comments (2)</h3>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./assets/img/blog/user-2.jpg" class="img-fluid rounded-start" alt="person" />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Lance Bogrol</h4>
+                        <p class="card-text">12 April, 2023 at 3.50pm</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">By defining and following internal and external
+                            processes, your team will have clarity on
+                            resources to attract and retain customers for your
+                            business.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./assets/img/blog/user-3.jpg" class="img-fluid rounded-start" alt="person" />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Dasy Lily</h4>
+                        <p class="card-text">12 April, 2023 at 3.50pm</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">By defining and following internal and external
+                            processes, your team will have clarity on
+                            resources to attract and retain customers for your
+                            business.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./assets/img/blog/user-4.jpg" class="img-fluid rounded-start" alt="person" />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title">Shahnewaz Sakil</h4>
+                        <p class="card-text">12 April, 2023 at 3.50pm</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">By defining and following internal and external
+                            processes, your team will have clarity on
+                            resources to attract and retain customers for your
+                            business.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr />
+                <h3>Leave a Reply</h3>
+                <p>
+                  Your email address will not be published. Required fields
+                  are marked *
+                </p>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Your Name
+                  </label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Lance Bogrol" />
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="name@example.com" />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Save my name, email, and website in this browser for the
+                    next time I comment.
+                  </label>
+                </div>
+                <button type="button" class="btn btn-primary">Primary</button>
+              </div> -->
             </div>
-
-            <!--  -->
-            <!--  -->
-            <!--  -->
-            <div class="col-3">
-             <div class="row">
+          </div>
+          <!-- <div class="col-3">
+            <div class="row">
               <div class="col-12">
                 <div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Search..." />
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search..." />
                   <i class="bi bi-search"></i>
                 </div>
               </div>
@@ -647,10 +368,7 @@
                 <h3>About me</h3>
                 <a href="#">
                   <div class="card">
-                    <img
-                      src="./assets/img/blog/blog-user-1.jpg"
-                      class="card-img-top"
-                      alt="user" />
+                    <img src="./assets/img/blog/blog-user-1.jpg" class="card-img-top" alt="user" />
                     <div class="card-body">
                       <h3>Ravi O'Leigh</h3>
                       <span>Photographer & Blogger</span>
@@ -658,10 +376,7 @@
                         Lorem ligula eget dolor. Aenean massa. Cum sociis que
                         penatibus magnis dis parturient
                       </p>
-                      <img
-                        src="./assets/img/blog/blog-sign.png"
-                        class="img-fluid rounded-start"
-                        alt="signature" />
+                      <img src="./assets/img/blog/blog-sign.png" class="img-fluid rounded-start" alt="signature" />
                     </div>
                   </div>
                 </a>
@@ -673,9 +388,7 @@
                   <div class="card mb-3">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/blog-latest-post-1.jpg"
-                          class="img-fluid rounded-start"
+                        <img src="./assets/img/blog/blog-latest-post-1.jpg" class="img-fluid rounded-start"
                           alt="post" />
                       </div>
                       <div class="col-md-8">
@@ -687,13 +400,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12"><hr /></div>
+                  <div class="col-12">
+                    <hr />
+                  </div>
                   <div class="card mb-3">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/blog-latest-post-2.jpg"
-                          class="img-fluid rounded-start"
+                        <img src="./assets/img/blog/blog-latest-post-2.jpg" class="img-fluid rounded-start"
                           alt="post" />
                       </div>
                       <div class="col-md-8">
@@ -705,13 +418,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12"><hr /></div>
+                  <div class="col-12">
+                    <hr />
+                  </div>
                   <div class="card mb-3">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img
-                          src="./assets/img/blog/blog-latest-post-3.jpg"
-                          class="img-fluid rounded-start"
+                        <img src="./assets/img/blog/blog-latest-post-3.jpg" class="img-fluid rounded-start"
                           alt="post" />
                       </div>
                       <div class="col-md-8">
@@ -724,7 +437,7 @@
                     </div>
                   </div>
                 </div>
-                
+
               </div>
 
               <div class="col-12">
@@ -733,9 +446,9 @@
                   <div class="card-body">
                     <ul>
                       <li><a href="#">Farming </a><span>(12)</span></li>
-                      <li><a href="#">Crisp Bread & Cake  </a><span>(6)</span></li>
-                      <li><a href="#">Milk & Meat  </a><span>(2)</span></li>
-                      <li><a href="#">Organic Fruits  </a><span>(8)</span></li>
+                      <li><a href="#">Crisp Bread & Cake </a><span>(6)</span></li>
+                      <li><a href="#">Milk & Meat </a><span>(2)</span></li>
+                      <li><a href="#">Organic Fruits </a><span>(8)</span></li>
                       <li><a href="#">Sea Foods </a><span>(0)</span></li>
                       <li><a href="#">Vegetable </a><span>(3)</span></li>
                     </ul>
@@ -745,105 +458,124 @@
               <div class="col-12">
                 <h3>Popular Tags</h3>
                 <hr />
-               <a href="#">
-                <div>
-                  <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-outline-primary">Summer</button>
-                    <button type="button" class="btn btn-outline-primary">Vintage</button>
-                    <button type="button" class="btn btn-outline-primary">Sunglasses</button>
+                <a href="#">
+                  <div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Summer</button>
+                      <button type="button" class="btn btn-outline-primary">Vintage</button>
+                      <button type="button" class="btn btn-outline-primary">Sunglasses</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-primary">Organic Food</button>
+                      <button type="button" class="btn btn-outline-primary">Lifesttyle</button>
+                      <button type="button" class="btn btn-outline-primary">Nature</button>
+                    </div>
                   </div>
-                  <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button type="button" class="btn btn-outline-primary">Organic Food</button>
-                    <button type="button" class="btn btn-outline-primary">Lifesttyle</button>
-                    <button type="button" class="btn btn-outline-primary">Nature</button>
-                  </div>
-                </div>
-               </a>
+                </a>
               </div>
-             </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <!-- place footer here -->
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <img
-              src="./assets/img/shofy/shofy-logo.svg"
-              class="img-fluid"
-              alt="shofy logo" />
-            <p>
-              We are a team of designers and developers that create high quality
-              WordPress
-            </p>
-            <div>
-              <a href="#">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-vimeo"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>My Account</h4>
-            <ul>
-              <li><a href="#">Track Orders</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Returns</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>Infomation</h4>
-            <ul>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>Talk To Us</h4>
-            <span>Got Questions? Call us</span>
-            <h4><a href="#">+670 413 90 762</a></h4>
-            <div>
-              <a href="#">
-                <img
-                  src="./assets/img/icon/footer-1.svg"
-                  class="img-fluid"
-                  alt="mail icon" />
-                <p>shofy@support.com</p>
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img
-                  src="./assets/img/icon/footer-2.svg"
-                  class="img-fluid"
-                  alt="location icon" />
-                <p>79 Sleepy Hollow St. <br />Jamaica, New York 1432</p>
-              </a>
-            </div>
-          </div>
+          </div> -->
+
         </div>
       </div>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"></script>
-  </body>
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- ========== Start Footer ========== -->
+  <footer class="pt-80 pb-22">
+    <div class="container-lg">
+      <div class="row row-24">
+        <div class="col-lg-3 col-md-12 text-center text-md-start">
+          <img src="./assets/img/shofy/shofy-logo.svg" class="img-fluid mb-24" alt="shofy logo" />
+          <p class="mb-24">We are a team of designers and developers that create high quality WordPress</p>
+          <div>
+            <a class="btn btn-light" href=" #"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-vimeo"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm d-flex align-items-center align-items-md-start flex-column">
+          <h4 class=" fs-20 fw-600 mb-16">My Account</h4>
+          <ul class="mb-0 ps-16 fs-14 fw-500 li-12 text-grey-800">
+            <li>
+              <a href="#">Track Orders</a>
+            </li>
+            <li>
+              <a href="#">Shipping</a>
+            </li>
+            <li>
+              <a href="#">Wishlist</a>
+            </li>
+            <li>
+              <a href="#">My Account</a>
+            </li>
+            <li>
+              <a href="#">Order History</a>
+            </li>
+            <li>
+              <a href="#">Returns</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm  d-flex align-items-center align-items-md-start flex-column">
+          <h4 class=" fs-20 fw-600 mb-16">Infomation</h4>
+          <ul class="mb-0 ps-16 fw-500 fs-14 li-12 text-grey-800">
+            <li>
+              <a href="#">Our Story</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Latest News</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12  text-center text-md-start">
+          <h4 class="fs-20 fw-600 mb-8">Talk To Us</h4>
+          <p class="fs-12 mb-24 text-grey-800">Got Questions? Call us</p>
+          <h4 class="fs-22 fw-600 mb-16">
+            <a href="#">+670 413 90 762</a>
+          </h4>
+          <a href="#" class="d-flex gap-8 text-grey-800 justify-content-md-start justify-content-center mb-12">
+            <img src="./assets/img/icon/footer-1.svg" class="img-fluid" alt="mail icon" />
+            <p>shofy@support.com</p>
+          </a>
+          <a href="#"
+            class="d-flex text-grey-800 justify-content-md-start justify-content-center align-items-start gap-8">
+            <img src="./assets/img/icon/footer-2.svg" class="img-fluid" alt="location icon" />
+            <p>
+              79 Sleepy Hollow St.
+              <br />Jamaica, New York 1432
+            </p>
+          </a>
+        </div>
+        <div class="col-12 mt-24">
+          <hr>
+        </div>
+        <div class="col-12">
+          <p class="text-center mt-8 fs-12 text-muted">© 2023 All Rights Reserved </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End Footer ========== -->
+</body>
+
 </html>
