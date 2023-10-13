@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>E-commerce</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- font family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet" />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <!-- css file -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
-      <div class="container-lg">
-        <a href="index.html">
-          <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
-        </a>
-        <div class="offcanvas offcanvas-end flex-grow-0 me-auto" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <a href="index.html">
-              <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
-            </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 ps-lg-3">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-          
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="product-list.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
-              </li>
 
-            </ul>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Shofy - Multipurpose eCommerce Angular Template</title>
+  <link rel="shortcut icon" href="assets/img/shofy/shofy-favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,  shrink-to-fit=no" />
+  <!-- ========== Start Link ========== -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oregano&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- ========== End Link ========== -->
+</head>
+
+<body>
+  <!-- ========== Start Navbar ========== -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+    <div class="container-lg">
+      <a href="index.html">
+        <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
+      </a>
+      <div class="offcanvas offcanvas-end flex-grow-0 me-auto" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a href="index.html">
+            <img class="img-fluid" src="./assets/img/shofy/shofy-logo.svg" alt="shofy-logo" />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="form-search me-auto">
-          <input type="text" class="form-control" name="" id="" placeholder="Search for Products..." />
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 ps-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="product-list.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="form-search ms-3 me-auto d-none d-md-block">
+        <input type="text" class="form-control" name="" id="" placeholder="Search for Products..." />
+      </div>
+      <div class="hstack ">
         <div class="position-relative me-3">
           <i class="bi bi-cart3 fs-3"></i>
           <span class="position-absolute top-8 start-100 translate-middle badge rounded-pill bg-danger">
-            
             0
             <span class="visually-hidden">unread messages</span>
           </span>
         </div>
-        <div class="btn-group">
+        <div class="dropdown">
           <button type="button" class="btn border-0" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="online">
-              <img src="/assets/img/user/user1.jpg" class="user-img online" alt="" srcset="" />
+              <img src="./assets/img/user/user1.jpg" class="user-img online" alt="" srcset="" />
             </div>
           </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
+          <ul class="dropdown-menu dropdown-profile dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li class="px-3">
               <button class="dropdown-item" type="button">
                 <div class="hstack gap-3">
-                  <img src="/assets/img/user/user1.jpg" class="user-img online" alt="" srcset="" />
-                  <div>
-                    <p>Jane cooper</p>
-                    <small>janeester@two.com</small>
+                  <img src="./assets/img/user/user1.jpg" class="img-fluid rounded-4 sq-50" alt="" srcset="" />
+                  <div class="vstack justify-content-center">
+                    <p class="fw-600 text-dark">Jane cooper</p>
+                    <small class="text-muted">janeester@two.com</small>
                   </div>
                 </div>
               </button>
@@ -84,843 +79,1452 @@
             <li>
               <hr class="dropdown-divider" />
             </li>
-            <li>
+            <li class="px-3">
               <button class="dropdown-item" type="button">Settings</button>
             </li>
-
-            <li>
+            <li class="px-3">
               <button class="dropdown-item" type="button">Sign out</button>
             </li>
           </ul>
         </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-    </nav>
-    <main>
-      <section class="section">
-        <div class="container-lg">
-          <div class="row">
-            <div class="col-12">
-              <h3>Shop Grid</h3>
-              <span>
-                <a href="#">Home</a>
-                <a href="#">Shop Grid</a>
-              </span>
-            </div>
-            <div class="col-lg-3">
-              <div class="row">
-                <div class="col-12">
-                  <h3>Price Filter</h3>
-                  <label for="customRange1" class="form-label">
-                    <span>0</span>
-                  </label>
-                  <input type="range" class="form-range" id="customRange1" />
-                  <span> $0 - $590 </span>
-                  <button type="button" class="btn btn-light">Filter</button>
-                </div>
-                <div class="col-12">
-                  <h3>Product Status</h3>
-                  <hr />
-                  <div class="checkbox">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault" />
-                      <label class="form-check-label" for="flexCheckDefault">
-                        On Sale
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        In Stock
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Out Of Stock
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <h3>Categories</h3>
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <ul>
-                        <li><a href="#"> Headphones </a><span>3</span></li>
-                        <li><a href="#"> Mobile Tablets </a><span>3</span></li>
-                        <li><a href="#"> CPU Heat Pipes </a><span>2</span></li>
-                        <li><a href="#"> Smart Watch </a><span>3</span></li>
-                        <li><a href="#"> Bluetooth </a><span>2</span></li>
-                        <li><a href="#"> Clothing </a><span>4</span></li>
-                        <li><a href="#"> Bags </a><span></span>2</li>
-                        <li><a href="#"> Shoes </a><span></span>2</li>
-                        <li>
-                          <a href="#"> Discover Skincare </a><span>2</span>
-                        </li>
-                        <li><a href="#"> Beauty of Skin </a><span>2</span></li>
-                        <li>
-                          <a href="#"> Awesome Lip Care </a><span>2</span>
-                        </li>
-                        <li><a href="#"> Facial Care </a><span>2</span></li>
-                        <li><a href="#"> Bracelets </a><span>2</span></li>
-                        <li><a href="#"> Earrings </a><span>3</span></li>
-                        <li><a href="#"> Necklaces </a><span>2</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <h3>Top Rated Products</h3>
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/products/product-9.png"
-                          class="card-img-top"
-                          alt="headset" />
+    </div>
+  </nav>
+  <!-- ========== End Navbar ========== -->
+  <main>
+    <section class="section">
+      <div class="container-lg">
+        <div class="row row-24">
+          <div class="col-12  ">
+            <h3 class="fs-44 fw-500">Shop Grid</h3>
+            <span class="d-flex gap-8 text-muted fs-14">
+              <a href="#">Home</a>
+              <span class="vr"></span>
+              <a href="#">Shop Grid</a>
+            </span>
+          </div>
+          <div class="col-lg-9 order-lg-last ">
+            <div class="row row-24">
+              <div class="col-12 d-flex d-none d-md-flex">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link p-0 me-8 active" id="new-products" data-bs-toggle="tab"
+                      data-bs-target="#new-products-pane" type="button" role="tab" aria-controls="new-products-pane"
+                      aria-selected="true">
+                      <div class="btn btn-outline-dark rounded-0">
+                        <i class="bi bi-grid "></i>
                       </div>
-                      <div class="col-md-8">
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link p-0" id="feature-products" data-bs-toggle="tab"
+                      data-bs-target="#feature-products-pane" type="button" role="tab"
+                      aria-controls="feature-products-pane" aria-selected="false">
+                      <div class="btn btn-outline-dark rounded-0">
+                        <i class="bi bi-list"></i>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+                <div class="dropdown ms-auto">
+                  <button
+                    class="btn btn-outline-secondary bg-light text-muted fs-12 rounded-0 dropdown-toggle show d-flex justify-content-between align-items-center"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;"">
+                    Default Sorting
+                  </button>
+                  <ul class=" dropdown-menu fs-12 border-0 shadow-sm px-12">
+                    <li>
+                      <a class="dropdown-item rounded-1" href="#"> Low to Hight </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item rounded-1" href="#"> High to Low </a>
+                    </li>
+                    <li><a class="dropdown-item rounded-1" href="#"> On Sale </a></li>
+                    </ul>
+                </div>
+
+              </div>
+              <div class="col-12">
+                <div class="row row-16 d-md-none">
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-9.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
                         <div class="card-body">
-                          <div>
-                            <span>
+                          <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                          <h3 class="fs-16 mb-3">Headphones Wireless.</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-half"></i>
                             </span>
-                            <span>(7)</span>
+                            <span class="text-grey-800">(7 Review)</span>
                           </div>
-                          <h34>Headphones Wireless.</h34>
-                          <span>$130.00</span>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                            <span class="  fw-600 text-primary">$103.20 </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <!--  -->
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/products/product-13.png"
-                          class="card-img-top"
-                          alt="headset" />
-                      </div>
-                      <div class="col-md-8">
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-10.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
                         <div class="card-body">
-                          <div>
-                            <span>
+                          <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                          <h3 class="fs-16 mb-3">Gaming Wireless.</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-half"></i>
                             </span>
-                            <span>(7)</span>
+                            <span class="text-grey-800">(7 Review)</span>
                           </div>
-                          <h4>iPhone 14 Pro</h4>
-                          <span>$900.00</span>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$130</del></span>
+                            <span class="  fw-600 text-primary">$123.50 </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <!--  -->
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/products/product-16.png"
-                          class="card-img-top"
-                          alt="headset" />
-                      </div>
-                      <div class="col-md-8">
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-11.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
                         <div class="card-body">
-                          <div>
-                            <span>
+                          <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                          <h3 class="fs-16 mb-3">Headphone with Mic.</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-half"></i>
                             </span>
-                            <span>(7)</span>
+                            <span class="text-grey-800">(7 Review)</span>
                           </div>
-                          <h4>Antec Air Cooler</h4>
-                          <span>$300.00</span>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                            <span class="  fw-600 text-primary">$103.20 </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <!--  -->
-                  <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img
-                          src="./assets/img/products/product-14.png"
-                          class="card-img-top"
-                          alt="headset" />
-                      </div>
-                      <div class="col-md-8">
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-12.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
                         <div class="card-body">
-                          <div>
-                            <span>
+                          <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                          <h3 class="fs-16 mb-3">Galaxy Android Tablet.</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-fill"></i>
                               <i class="bi bi-star-half"></i>
                             </span>
-                            <span>(7)</span>
+                            <span class="text-grey-800">(7 Review)</span>
                           </div>
-                          <h4>Apple iPad Air</h4>
-                          <span>$300.00</span>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$320</del></span>
+                            <span class="  fw-600 text-primary">$288.00 </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-13.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                          <h3 class="fs-16 mb-3">iPhone 14 Pro</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-grey-800">(7 Review)</span>
+                          </div>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                            <span class="  fw-600 text-primary">$103.20 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-14.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                          <h3 class="fs-16 mb-3">Apple iPad Air</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-grey-800">(7 Review)</span>
+                          </div>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$999</del></span>
+                            <span class="  fw-600 text-primary">$949.05 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-15.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p class="fs-12 mb-1  text-grey-800">CPU Heat Pipes</p>
+                          <h3 class="fs-16 mb-3">DeepCool Air Cooler</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-grey-800">(7 Review)</span>
+                          </div>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                            <span class="  fw-600 text-primary">$80.00 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <a href="#">
+                      <div class="card card-product-1">
+                        <div class="card-body position-relative p-0">
+                          <img src="assets/img/products/product-16.png" class="card-img-top" alt="headset">
+                          <div class="btn-group-vertical card-action position-absolute" role="group"
+                            aria-label="Basic outlined example">
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-white-2">
+                              <i class="bi bi-heart"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <p class="fs-12 mb-1  text-grey-800">CPU Heat Pipes</p>
+                          <h3 class="fs-16 mb-3">Antec Air Cooler</h3>
+                          <div class="fs-12 mb-1">
+                            <span class="text-warning">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-half"></i>
+                            </span>
+                            <span class="text-grey-800">(7 Review)</span>
+                          </div>
+                          <div>
+                            <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                            <span class="  fw-600 text-primary">$80.00 </span>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="popular-brand">
-                    <h3>Popular Brands</h3>
-                    <div class="brands">
-                      <img
-                        src="./assets/img/blog/brand-1.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-2.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-3.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-4.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-5.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-6.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-7.png"
-                        class="img-fluid"
-                        alt="brand-name" />
-                      <img
-                        src="./assets/img/blog/brand-8.png"
-                        class="img-fluid"
-                        alt="brand-name" />
+                <div class="tab-content d-none d-md-block" id="myTabContent">
+                  <div class="tab-pane fade show active" id="new-products-pane" role="tabpanel"
+                    aria-labelledby="new-products" tabindex="0">
+                    <div class="row row-16">
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-9.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-16 mb-3">Headphones Wireless.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 text-primary">$103.20 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-10.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-16 mb-3">Gaming Wireless.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$130</del></span>
+                                <span class="  fw-600 text-primary">$123.50 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-11.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-16 mb-3">Headphone with Mic.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                                <span class="  fw-600 text-primary">$103.20 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-12.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-16 mb-3">Galaxy Android Tablet.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$320</del></span>
+                                <span class="  fw-600 text-primary">$288.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-13.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-16 mb-3">iPhone 14 Pro</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 text-primary">$103.20 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-14.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-16 mb-3">Apple iPad Air</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$999</del></span>
+                                <span class="  fw-600 text-primary">$949.05 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-15.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">CPU Heat Pipes</p>
+                              <h3 class="fs-16 mb-3">DeepCool Air Cooler</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                                <span class="  fw-600 text-primary">$80.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-md-4 col-sm-6">
+                        <a href="#">
+                          <div class="card card-product-1">
+                            <div class="card-body position-relative p-0">
+                              <img src="assets/img/products/product-16.png" class="card-img-top" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <p class="fs-12 mb-1  text-grey-800">CPU Heat Pipes</p>
+                              <h3 class="fs-16 mb-3">Antec Air Cooler</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <span class="text-grey-800">(7 Review)</span>
+                              </div>
+                              <div>
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 text-primary">$80.00 </span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade " id="feature-products-pane" role="tabpanel"
+                    aria-labelledby="feature-products" tabindex="0">
+                    <div class="row row-16 flex-row-reverse ">
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-11.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-20 mb-1 fw-400">Headphone with Mic.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                                <span class="  fw-600 ">$103.20</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-12.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-20 mb-1 fw-400">Galaxy Android Tablet.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$320</del></span>
+                                <span class="  fw-600 ">$288.00 </span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-13.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-20 mb-1 fw-400">iPhone 14 Pro</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 ">$103.20</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-14.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Mobile Tablets</p>
+                              <h3 class="fs-20 mb-1 fw-400">Apple iPad Air</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$999</del></span>
+                                <span class="  fw-600 ">$949.05</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-15.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">CPU Heat Pipes</p>
+                              <h3 class="fs-20 mb-1 fw-400">DeepCool Air Cooler</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del></del></span>
+                                <span class="  fw-600 ">$80.00</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-16.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">CPU Heat Pipes</p>
+                              <h3 class="fs-20 mb-1 fw-400">Antec Air Cooler</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 ">$80.00</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-9.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-20 mb-1 fw-400">Headphones Wireless.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$120</del></span>
+                                <span class="  fw-600 ">undefined</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-10.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Headphones</p>
+                              <h3 class="fs-20 mb-1 fw-400">Gaming Wireless.</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$130</del></span>
+                                <span class="  fw-600 ">$123.50</span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <a href="#">
+                          <div class="card  d-flex flex-row card-product-1">
+                            <div class="card-body grey-bg-2 position-relative p-0 d-flex flex-shrink-0"
+                              style="width:30%;">
+                              <img src="assets/img/products/product-18.png" class="card-img-top m-auto" alt="headset">
+                              <div class="btn-group-vertical card-action position-absolute" role="group"
+                                aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-cart3"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-white-2">
+                                  <i class="bi bi-heart"></i>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="card-body border-0">
+                              <p class="fs-14 mb-1  text-grey-800">Bluetooth</p>
+                              <h3 class="fs-20 mb-1 fw-400">Lenovo Wireless Bluetooth</h3>
+                              <div class="fs-12 mb-1">
+                                <span class="text-warning">
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-fill"></i>
+                                  <i class="bi bi-star-half"></i>
+                                </span>
+                                <!-- <span class="text-grey-800">(7 Review)</span> -->
+                              </div>
+                              <div class="mt-24">
+                                <span class="text-strick fs-12 text-grey-800"><del>$70</del></span>
+                                <span class="  fw-600 "> $66.50 </span>
+                              </div>
+                              <p class="fw-300 fs-14 mt-24">Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                                Evolve2
+                                75 USB-A MS Teams Stereo Headset ha...</p>
+                              <button class="btn btn-dark fs-14 rounded-0 mt-24">Add To Card</button>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!--  -->
-            <!--  -->
-            <div class="col-lg-9">
-              <div class="row">
-                <div class="col-12">
-                  <div>
-                    <ul class="nav nav-tabs">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                          >Active</a
-                        >
+          </div>
+          <div class="col-lg-3">
+            <div class="row row-24">
+              <div class="col-12">
+                <p class="fs-18 fw-500 mb-8">Price Filter</p>
+                <label for="customRange1"
+                  class="form-label d-flex w-100 text-grey-800 justify-content-between fs-14 mb-0">
+                  <span>0</span>
+                  <span>1199</span>
+                </label>
+                <input type="range" class="form-range" id="customRange1" />
+                <div class="d-flex">
+                  <span class="fs-12"> $0 - $590 </span>
+                  <button type="button" class="btn ms-auto btn-light fs-12 lh-1 py-1 rounded-0">Filter</button>
+
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-18 fw-500 mb-8">Product Status</h3>
+                  <hr class="mt-1" />
+                <div class="checkbox fs-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      On Sale
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      In Stock
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Out Of Stock
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-18 fw-500 mb-8">Categories</h3>
+                  <hr class="mt-1" />
+                <div class="card border-0">
+                  <div class="card-body ps-0 py-0 pe-8 overflow-auto" style="height: 280px;">
+                    <ul class="fs-12 ps-0 li-8 text-muted">
+                      <li class="d-flex justify-content-between "><a href="#"> Headphones </a><span
+                          class="border rounded-pill px-2 py-1">3</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Mobile Tablets </a><span
+                          class="border rounded-pill px-2 py-1">3</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> CPU Heat Pipes </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Smart Watch </a><span
+                          class="border rounded-pill px-2 py-1">3</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Bluetooth </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Clothing </a><span
+                          class="border rounded-pill px-2 py-1">4</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Bags </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Shoes </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between ">
+                        <a href="#"> Discover Skincare </a><span class="border rounded-pill px-2 py-1">2</span>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                      <li class="d-flex justify-content-between "><a href="#"> Beauty of Skin </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between ">
+                        <a href="#"> Awesome Lip Care </a><span class="border rounded-pill px-2 py-1">2</span>
                       </li>
+                      <li class="d-flex justify-content-between "><a href="#"> Facial Care </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Bracelets </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Earrings </a><span
+                          class="border rounded-pill px-2 py-1">3</span></li>
+                      <li class="d-flex justify-content-between "><a href="#"> Necklaces </a><span
+                          class="border rounded-pill px-2 py-1">2</span></li>
                     </ul>
                   </div>
-                  <div>
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Default Sorting
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a class="dropdown-item" href="#"> Low to Hight </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"> High to Low </a>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> On Sale </a></li>
-                      </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="fs-18 fw-500 mb-8">Top Rated Products</h3>
+                  <hr class="mt-1" />
+                <div class="row row-16">
+                  <div class="col-12">
+                    <div class="hstack gap-8">
+                      <div class="grey-bg-2 p-6 sq-72">
+                        <img src="./assets/img/products/product-10.png" class="card-img-top" alt="headset" />
+                      </div>
+                      <div>
+                        <p class="fs-10 mb-auto">
+                          <span class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                          </span>
+                          <span class="text-muted">(7)</span>
+                        </p>
+                        <h3 class="fs-14 mt-1 mb-0 fw-500">Headphones Wireless.</h3>
+                        <span class="fs-12 fw-300">$130.00</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-11.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
+                  <div class="col-12">
+                    <div class="hstack gap-8">
+                      <div class="grey-bg-2 p-6 sq-72">
+                        <img src="./assets/img/products/product-13.png" class="card-img-top" alt="headset" />
                       </div>
-                      <div class="card-body">
-                        <p>Headphones</p>
-                        <h3>Headphone with Mic</h3>
-                        <div>
-                          <span>
+                      <div>
+                        <p class="fs-10 mb-auto">
+                          <span class="text-warning">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                           </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span> $110.00 </span>
-                        </div>
+                          <span class="text-muted">(7)</span>
+                        </p>
+                        <h3 class="fs-14 mt-1 mb-0 fw-500">iPhone 14 Pro</h3>
+                        <span class="fs-12 fw-300">$130.00</span>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-12.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
+                  </div>
+                  <div class="col-12">
+                    <div class="hstack gap-8">
+                      <div class="grey-bg-2 p-6 sq-72">
+                        <img src="./assets/img/products/product-16.png" class="card-img-top" alt="headset" />
                       </div>
-                      <div class="card-body">
-                        <p>Mobile Tablets</p>
-                        <h3>Galaxy Android Tablet</h3>
-                        <div>
-                          <span>
+                      <div>
+                        <p class="fs-10 mb-auto">
+                          <span class="text-warning">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                           </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$320</span>
-                          <span> $288.00 </span>
-                        </div>
+                          <span class="text-muted">(7)</span>
+                        </p>
+                        <h3 class="fs-14 mt-1 mb-0 fw-500">Antec Air Cooler</h3>
+                        <span class="fs-12 fw-300">$300.00</span>
                       </div>
                     </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-13.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
+                  </div>
+                  <div class="col-12">
+                    <div class="hstack gap-8">
+                      <div class="grey-bg-2 p-6 sq-72">
+                        <img src="./assets/img/products/product-14.png" class="card-img-top" alt="headset" />
                       </div>
-                      <div class="card-body">
-                        <p>Mobile Tablets</p>
-                        <h3>iPhone 14 Pro</h3>
-                        <div>
-                          <span>
+                      <div>
+                        <p class="fs-10 mb-auto">
+                          <span class="text-warning">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                           </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$1199</span>
-                          <span> $1019.15 </span>
-                        </div>
+                          <span class="text-muted">(7)</span>
+                        </p>
+                        <h3 class="fs-14 mt-1 mb-0 fw-500">Apple iPad Air</h3>
+                        <span class="fs-12 fw-300">$300.00</span>
                       </div>
                     </div>
-                  </a>
+                  </div>
+
                 </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-14.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>Mobile Tablets</p>
-                        <h3>Apple iPad Air</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$999</span>
-                          <span> $949.05 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+
+              </div>
+              <div class="col-12">
+                <p class="fs-18 fw-500 mb-8">Popular Brands</h3>
+                  <hr class="mt-1" />
+                <div class="row row-16 row-cols-2">
+                  <img src="./assets/img/brand/brand-1.png" style="height: 50px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-2.png" style="height: 50px; object-fit:none;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-3.png" style="height: 30px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-4.png" style="height: 34px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-5.png" style="height: 29px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-6.png" style="height: 31px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-7.png" style="height: 31px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
+                  <img src="./assets/img/brand/brand-8.png" style="height: 36px; object-fit: contain;" class="img-fluid"
+                    alt="brand-name" />
                 </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-15.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>CPU Heat Pipes</p>
-                        <h3>DeepCool Air Cooler</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$80.00 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-16.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>CPU Heat Pipes</p>
-                        <h3>Antec Air Cooler</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$80.00 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-9.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>Headphones</p>
-                        <h3>Headphones Wireless.</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$120</span>
-                          <span> $103.20 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-10.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>Headphones</p>
-                        <h3>Gaming Headphone</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$130</span>
-                          <span> $123.50 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="./assets/img/products/product-18.png"
-                        class="card-img-top"
-                        alt="headset" />
-                      <div
-                        class="btn-group"
-                        role="group"
-                        aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/cart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/eyes.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          <img
-                            src="./assets/img/icon/heart.svg"
-                            class="img-fluid "
-                            alt="" />
-                        </button>
-                      </div>
-                      <div class="card-body">
-                        <p>Bluetooth</p>
-                        <h3>Lenovo Wireless Bluetooth</h3>
-                        <div>
-                          <span>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                          </span>
-                          <span>(7 Review)</span>
-                        </div>
-                        <div>
-                          <span>$70</span>
-                          <span> $66.50 </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-4"></div>
+                <!-- </div> -->
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <!-- place footer here -->
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <img
-              src="./assets/img/shofy/shofy-logo.svg"
-              class="img-fluid"
-              alt="shofy logo" />
-            <p>
-              We are a team of designers and developers that create high quality
-              WordPress
-            </p>
-            <div>
-              <a href="#">
-                <i class="bi bi-facebook"></i>
-              </a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-vimeo"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>My Account</h4>
-            <ul>
-              <li><a href="#">Track Orders</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Wishlist</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Order History</a></li>
-              <li><a href="#">Returns</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>Infomation</h4>
-            <ul>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
-            <h4>Talk To Us</h4>
-            <span>Got Questions? Call us</span>
-            <h4><a href="#">+670 413 90 762</a></h4>
-            <div>
-              <a href="#">
-                <img
-                  src="./assets/img/icon/footer-1.svg"
-                  class="img-fluid"
-                  alt="mail icon" />
-                <p>shofy@support.com</p>
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img
-                  src="./assets/img/icon/footer-2.svg"
-                  class="img-fluid"
-                  alt="location icon" />
-                <p>79 Sleepy Hollow St. <br />Jamaica, New York 1432</p>
-              </a>
-            </div>
-          </div>
+          <!--  -->
+          <!--  -->
+
         </div>
       </div>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"></script>
-  </body>
-</html>
+    </section>
+  </main>
+  <!-- ========== Start Footer ========== -->
+  <footer class="pt-80 pb-22">
+    <div class="container-lg">
+      <div class="row row-24">
+        <div class="col-lg-3 col-md-12 text-center text-md-start">
+          <img src="./assets/img/shofy/shofy-logo.svg" class="img-fluid mb-24" alt="shofy logo" />
+          <p class="mb-24">We are a team of designers and developers that create high quality WordPress</p>
+          <div>
+            <a class="btn btn-light" href=" #"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-twitter"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-light" href=" #"><i class="bi bi-vimeo"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm d-flex align-items-center align-items-md-start flex-column">
+          <h4 class=" fs-20 fw-600 mb-16">My Account</h4>
+          <ul class="mb-0 ps-16 fs-14 fw-500 li-12 text-grey-800">
+            <li>
+              <a href="#">Track Orders</a>
+            </li>
+            <li>
+              <a href="#">Shipping</a>
+            </li>
+            <li>
+              <a href="#">Wishlist</a>
+            </li>
+            <li>
+              <a href="#">My Account</a>
+            </li>
+            <li>
+              <a href="#">Order History</a>
+            </li>
+            <li>
+              <a href="#">Returns</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm  d-flex align-items-center align-items-md-start flex-column">
+          <h4 class=" fs-20 fw-600 mb-16">Infomation</h4>
+          <ul class="mb-0 ps-16 fw-500 fs-14 li-12 text-grey-800">
+            <li>
+              <a href="#">Our Story</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Latest News</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12  text-center text-md-start">
+          <h4 class="fs-20 fw-600 mb-8">Talk To Us</h4>
+          <p class="fs-12 mb-24 text-grey-800">Got Questions? Call us</p>
+          <h4 class="fs-22 fw-600 mb-16">
+            <a href="#">+670 413 90 762</a>
+          </h4>
+          <a href="#" class="d-flex gap-8 text-grey-800 justify-content-md-start justify-content-center mb-12">
+            <img src="./assets/img/icon/footer-1.svg" class="img-fluid" alt="mail icon" />
+            <p>shofy@support.com</p>
+          </a>
+          <a href="#"
+            class="d-flex text-grey-800 justify-content-md-start justify-content-center align-items-start gap-8">
+            <img src="./assets/img/icon/footer-2.svg" class="img-fluid" alt="location icon" />
+            <p>
+              79 Sleepy Hollow St.
+              <br />Jamaica, New York 1432
+            </p>
+          </a>
+        </div>
+        <div class="col-12 mt-24">
+          <hr>
+        </div>
+        <div class="col-12">
+          <p class="text-center mt-8 fs-12 text-muted">© 2023 All Rights Reserved </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End Footer ========== -->
+</body>
 
-<!--  -->
-<!--  -->
-<!--  -->
+</html>
