@@ -1,0 +1,35 @@
+.slider-title {
+  font-weight: 900;
+  font-size: 2.3125rem;
+
+  line-height: 1.07;
+  margin-bottom: 12px;
+  @include media(">=md") {
+    font-size: 3.5rem;
+  }
+}
+.slider-content {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+.slider-discount {
+  display: inline-block;
+  color: #ffd43a;
+  position: relative;
+  z-index: 1;
+
+  svg {
+    position: absolute;
+    bottom: -0.875rem;
+    right: 0px;
+  }
+}
+.title-2 {
+  font-size: 1.875rem;
+  font-weight: 6000;
+  @include media(">=md") {
+    font-size: 2.8125rem;
+  }
+}

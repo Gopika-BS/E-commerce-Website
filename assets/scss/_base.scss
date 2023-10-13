@@ -1,0 +1,22 @@
+:root {
+  --font-icon: bootstrap-icons;
+}
+body {
+  --bs-body-font-family: "Poppins", sans-serif;
+  --bs-body-color: var(--text-dark);
+}
+p {
+  margin-bottom: 0;
+}
+// .section-hero {
+//   // min-height: 32.5rem;
+//   background-color: yellowgreen;
+// }
+.section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+a {
+  text-decoration: none;
+  color: inherit !important;
+}

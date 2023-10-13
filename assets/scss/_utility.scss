@@ -1,0 +1,136 @@
+.top-8 {
+  top: 0.5rem;
+}
+$rem: (
+  "1": 0.063,
+  "2": 0.125,
+  "3": 0.188,
+  "4": 0.25,
+  "5": 0.313,
+  "6": 0.375,
+  "7": 0.438,
+  "8": 0.5,
+  "9": 0.563,
+  "10": 0.625,
+  "11": 0.688,
+  "12": 0.75,
+  "13": 0.813,
+  "14": 0.875,
+  "15": 0.938,
+  "16": 1,
+  "17": 1.063,
+  "18": 1.125,
+  "20": 1.25,
+  "22": 1.375,
+  "23": 1.438,
+  "24": 1.5,
+  "25": 1.563,
+  "26": 1.625,
+  "28": 1.75,
+  "30": 1.875,
+  "31": 1.938,
+  "32": 2,
+  "35": 2.188,
+  "36": 2.25,
+  "40": 2.5,
+  "42": 2.625,
+  "44": 2.75,
+  "45": 2.813,
+  "46": 2.875,
+  "48": 3,
+  "50": 3.125,
+  "56": 3.5,
+  "57": 3.563,
+  "64": 4,
+  "72": 4.5,
+  "75": 4.688,
+  "80": 5,
+  "88": 5.5,
+  "90": 5.625,
+  "100": 6.25,
+);
+@each $px, $value in $rem {
+  @if $px != "1" and $px != "2" and $px != "3" and $px != "4" and $px != "5" {
+    .m-#{$px},
+    .my-#{$px},
+    .mt-#{$px} {
+      margin-top: #{$value}rem !important;
+    }
+    .m-#{$px},
+    .my-#{$px},
+    .mb-#{$px} {
+      margin-bottom: #{$value}rem !important;
+    }
+    .m-#{$px},
+    .mx-#{$px},
+    .ms-#{$px} {
+      margin-left: #{$value}rem !important;
+    }
+    .m-#{$px},
+    .mx-#{$px},
+    .me-#{$px} {
+      margin-right: #{$value}rem !important;
+    }
+
+    .p-#{$px},
+    .py-#{$px},
+    .pt-#{$px} {
+      padding-top: #{$value}rem !important;
+    }
+    .p-#{$px},
+    .py-#{$px},
+    .pb-#{$px} {
+      padding-bottom: #{$value}rem !important;
+    }
+    .p-#{$px},
+    .px-#{$px},
+    .ps-#{$px} {
+      padding-left: #{$value}rem !important;
+    }
+    .p-#{$px},
+    .px-#{$px},
+    .pe-#{$px} {
+      padding-right: #{$value}rem !important;
+    }
+    .fs-#{$px} {
+      font-size: #{$value}rem !important;
+    }
+    .gap-#{$px} {
+      gap: #{$value}rem !important;
+    }
+  }
+  .row-#{$px} {
+    --bs-gutter-x: #{$value}rem;
+    --bs-gutter-y: #{$value}rem;
+  }
+  .li-#{$px} {
+    li + li {
+      padding-top: #{$value}rem;
+    }
+  }
+  .sq-#{$px} {
+    width: #{$value}rem !important;
+    height: #{$value}rem !important;
+    min-height: unset !important;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+}
+
+$fontweight: (100, 200, 300, 400, 500, 600, 700, 800);
+@each $weight in $fontweight {
+  .fw-#{$weight} {
+    font-weight: #{$weight} !important;
+  }
+}
+$shadows: (
+  "0": none,
+  "sm": 0px 8px 16px 0px #121b211a,
+  "md": 0px 8px 16px 0px #121b211a,
+  "lg": 0px 24px 128px 0px #121b2166,
+);
+@each $shadow, $value in $shadows {
+  .shadow-#{$shadow} {
+    box-shadow: #{$value} !important;
+  }
+}
