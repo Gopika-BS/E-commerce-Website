@@ -1,0 +1,66 @@
+:root {
+  --font-icon: bootstrap-icons;
+}
+body {
+  --bs-body-font-family: "Poppins", sans-serif;
+  --bs-body-color: var(--text-dark);
+}
+p {
+  margin-bottom: 0;
+}
+// .section-hero {
+//   // min-height: 32.5rem;
+//   background-color: yellowgreen;
+// }
+.section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
+.section-subscribe {
+  background-color: var(--tp-theme-primary);
+  position: relative;
+  padding: 80px;
+  // height: 13.125rem;
+  .container-lg {
+    z-index: 2;
+    position: relative;
+  }
+  .subscribe-img {
+    z-index: 1;
+    position: absolute;
+    background-color: var(--tp-theme-primary);
+    inset: 0;
+    img {
+      position: absolute;
+      // mix-blend-mode: color-burn;
+    }
+    & :nth-child(1) {
+      mix-blend-mode: luminosity;
+      opacity: 0.5;
+      top: 0;
+      // height: 100%;
+    }
+    & :nth-child(2) {
+      bottom: 8%;
+      left: 15%;
+      mix-blend-mode: luminosity;
+      opacity: 0.5;
+    }
+    & :nth-child(3) {
+      right: 10%;
+      bottom: 20%;
+    }
+    & :nth-child(4) {
+      right: 30%;
+      top: 80%;
+    }
+    & :nth-child(5) {
+      top: 5%;
+      left: 50%;
+    }
+  }
+}
